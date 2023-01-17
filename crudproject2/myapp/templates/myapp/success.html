@@ -1,0 +1,30 @@
+
+{% extends "myapp/base.html"%} {% block content%}
+
+
+
+
+<a href="{% url 'entrydata' %}" class="btn btn-info ">Back to home </a> 
+{%if messages%}
+    {% for message in messages %}
+    <div class="alert alert-primary" role="alert">
+        
+        <P>{{nm}}</P>  
+        {{message}}
+    </div>
+        
+    {%endfor%}
+  
+{%endif%}
+{% endblock content%}
+
+
+
+
+
+
+
+
+
+
+
